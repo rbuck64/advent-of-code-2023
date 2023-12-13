@@ -6,12 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DayOneTest {
     @Test
-    void testTest() {
-        DayOne dayOne = new DayOne();
-        assertEquals(dayOne.test(), "Hello, World!");
-    }
-
-    @Test
     void getIntFromLine() {
         DayOne dayOne = new DayOne();
         String str1 = "adfljahsf1lakflfakj3";

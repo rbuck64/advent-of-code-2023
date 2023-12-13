@@ -92,8 +92,4 @@ public class DayOne {
         }
         return Integer.parseInt(String.valueOf(result));
     }
-
-    public static String test() {
-        return "Hello, World!";
-    }
 }
