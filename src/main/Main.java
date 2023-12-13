@@ -1,7 +1,6 @@
 package main;
 
 import dayOne.DayOne;
-
 public class Main {
 
     private static final String DAY_ONE_FILE_NAME = "dayOneInput.txt";
@@ -12,11 +11,12 @@ public class Main {
     }
 
     public static void runDayOne() {
-        DayOne dayOne = new DayOne();
-        int result = dayOne.sumIntsFromFile(DAY_ONE_FILE_NAME);
+        DayOne dayOne = new DayOne(DAY_ONE_FILE_NAME, ProblemPart.ONE);
+        int result = dayOne.sumIntsFromFile();
         System.out.println("Day One Part One answer: " + result);
-        
-        result = dayOne.sumIntsFromFilePtTwo(DAY_ONE_FILE_NAME);
+
+        dayOne.setProblemPart(ProblemPart.TWO);
+        result = dayOne.sumIntsFromFilePtTwo();
         System.out.print("Day One Part Two answer: " + result);
 
     }

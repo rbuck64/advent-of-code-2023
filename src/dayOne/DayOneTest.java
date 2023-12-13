@@ -1,5 +1,6 @@
 package dayOne;
 
+import main.ProblemPart;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class DayOneTest {
     @Test
     void getIntFromLine() {
-        DayOne dayOne = new DayOne();
+        DayOne dayOne = new DayOne("", ProblemPart.ONE);
         String str1 = "adfljahsf1lakflfakj3";
         String str2 = "adfljahsf14kflfakj";
         String str3 = "2adfljah23456788flakflfakj3";
@@ -19,7 +20,7 @@ class DayOneTest {
 
     @Test
     void IntFromLineAsStringPtTwo() {
-        DayOne dayOne = new DayOne();
+        DayOne dayOne = new DayOne("", ProblemPart.TWO);
         String str1 = "one";
         String str2 = "twothreefour";
         String str3 = "eighthree";

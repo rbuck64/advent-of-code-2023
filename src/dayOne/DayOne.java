@@ -1,5 +1,7 @@
 package dayOne;
 
+import main.ProblemPart;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -7,9 +9,22 @@ import java.util.Scanner;
 
 import static java.lang.Character.isDigit;
 
+
 public class DayOne {
 
-    public int sumIntsFromFilePtTwo(String filename) {
+    private String filename;
+    private ProblemPart problemPart;
+
+    public DayOne(String filename, ProblemPart problemPart) {
+        this.filename = filename;
+        this.problemPart = problemPart;
+    }
+
+    public void setProblemPart(ProblemPart problemPart) {
+        this.problemPart = problemPart;
+    }
+
+    public int sumIntsFromFilePtTwo() {
         int result = 0;
         try {
             File file = new File(filename);
@@ -58,7 +73,7 @@ public class DayOne {
     }
 
 
-    public int sumIntsFromFile(String filename) {
+    public int sumIntsFromFile() {
         int result = 0;
         try {
             File file = new File(filename);
