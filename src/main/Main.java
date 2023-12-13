@@ -11,5 +11,8 @@ public class Main {
         int result = dayOne.sumIntsFromFile("src/dayOne/dayOneInput.txt");
         System.out.print("Day One Part One answer: ");
         System.out.println(result);
+        result = dayOne.sumIntsFromFilePtTwo("src/dayOne/dayOneInput.txt");
+        System.out.print("Day One Part Two answer: ");
+        System.out.println(result);
     }
 }
